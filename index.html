@@ -3,41 +3,121 @@
 
     <head>
         <title> صفحتي الشخصية </title>
+       <link rel="stylesheet" href="style.css">
     </head>
 
+
     <body>
-        <h1>مرحبا في سيرتي الذاتيه</h1>
+        <header>      
+        <h1 id="main-title">مرحبا في سيرتي الذاتيه</h1>
+        </header>
 
-        <a href="#info">معلومات شخصيه</a>
-        <a href="#goal">الهدف من الموقع</a>
-        <a href="#sections">اهدافي في الحياه </a>
+     <nav> 
+
+      <ul>
+
+      <li><a href="#info">معلومات شخصيه</a></li> 
+      <li><a href="#goal">الهدف من الموقع</a></li>   
+      <li><a href="#sections">اهدافي في الحياه </a></li>
+
+      </ul>
+
+      </nav>
+
+    <section id="info">         
+        <h2 class="section-title" id="#info">معلومات شخصية</h2>
+        <table border="1">
+
+          <tr>
+            <th> المعلومات</th>
+            <th> البيانات</th>
+          </tr>  
+           
+          <tr> 
+            <td> الاسم</td>
+            <td> ابراهيم الحربي</td>
+          </tr>
+
+          <tr> 
+            <td> التخصص</td>
+            <td>برمجه وتطوير الويب</td>
+          </tr>
+          
+          <tr>
+            <td> الخبره</td>
+            <td> مبتدئ</td>
+          </tr>
 
 
- 
-        <h2 id="#info">معلومات شخصية</h2>
-        <p>اسمي ابراهيم، وأنا متدرب ويب ومهتم بتعلم أساسيات تصميم المواقع.</p>
+        </table>
+    </section>
+
+
+
+        
         <hr>
 
-        <h2 id="#goal">الهدف من الموقع</h2>
+        <h2 class="section-title" id="#goal">الهدف من الموقع</h2>
         <p>التعرف علي ومعرفتي جيدا.</p>
+
         <hr>
 
-        <h2 id="#sections">أهدافي في الحياه</h2>
-        <p>ان افتح شركه خاصه فيني في المستقبل القريب<br>تمرس وتمكن البرمجه<br>الحصول علئ معدل مرتفع</p>
+        <h2 class="section-title" id="#sections">أهدافي في الحياه</h2>
+        
+         <li> الحصول على معدل مرتفع</li>
+         <li> تمرس وتمكن البرمجه</li>
+         <li> افتتاح شركه خاصه فيني</li>
+
          <hr>
        
-      
       
 
      <p>للتواصل عن طريق <a href="mailto:444317252@tvtc.gov.sa"> بريدي الاكتروني </a></p>
 
-     <a href="res/صوره شخصيه.jpg">
-        <img res="res/numbers-01" alt="foto1" width="250"
-     </a>
-          
-
+  
      
     
+
+     <hr>
+
+    
+     <input type="text" name="text" id="text" placeholder="اسم المستخدم">
+     <label for="text">اسم المستخدم</label> 
+     <br>
+     <input type="password" name="password" id="password" placeholder="رمز المرور">
+     <label for="password"> رمز المرور</label>
+     <br>
+     <input type="email" name="email" id="email"  placeholder="البريد الاكتروني">
+     <label for="email"> البريد الاكتروني</label>
+     <br>
+     <input type="number" name="number" id="number"  max="25" min="12">
+     <label for="number">العمر</label>
+     <br>
+     <input type="date" name="date" id="date" >
+     <label for="date">تاريخ الميلاد</label>
+     <br>
+
+     <p>اختر لغتك المفضله لتطوير الويب</p>
+     <input type="radio" name="fav_lang" id="html" value=HTML>
+     <label for="html">HTML</label>
+     <br>
+     <input type="radio" name="fav_lang" id="css" value=CSS>
+     <label for="css">CSS</label>
+     <br>
+     <input type="radio" name="fav_lang" id="js" value=JavaScript >
+     <label for="js">JavaScript</label>
+     <br>
+     <P>ماهي اهتماماتك</P>
+     <input type="checkbox" name="interests" id="int1" value="reding">
+     <label for="int1">القراءه</label>
+     <br>
+     <input type="checkbox" name="interests" id="int2" value="prog">
+
+
+
+
+     <input type="submit" value="ارسال">
+     <input type="reset" value="اعاده تعيين">
 
     </body>
 
